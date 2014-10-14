@@ -58,7 +58,8 @@ table {
 .show_desktop {
 	display: block!important;
 }
-.show_mobile {
+.show_mobile,
+.show_iphone {
 	display: none!important;
 }
 .show_tablet {
@@ -1296,7 +1297,7 @@ section.project-donate .project-donate-button-container .orange-button {
 		width: 50%;
 	}
 	section#share .share_inner_02 h4 {
-		font-size: 18px!important;
+		font-size: 19px!important;
 		line-height: 25px;
 	}
 	section#collective #collective-inner #expanded-image-container {
@@ -1363,6 +1364,214 @@ section.project-donate .project-donate-button-container .orange-button {
 		height: 75%!important;
 	}
 
+}
+
+
+/* IPHONE MOBILE STYLING*/
+@media only screen and (max-width : 440px) {
+/* Styles */
+	.show_desktop,
+	.hide_iphone,
+	.desktop {
+		display: none!important;
+	}
+	.show_mobile,
+	.show_iphone {
+		display: block!important;
+	}
+	/*HOMEPAGE*/
+	#homepage #header-outer-container h2 {
+		font-size: 50px;
+	}
+	#homepage #header-outer-container h3 {
+		font-size: 21px;
+	}
+	#homepage section#collectives #collectives-inner h3 {
+		font-size: 28px;
+	}	
+	section#collectives article {
+		display: block;
+		width: 100%;
+		margin: 20px 0;
+	}
+	#homepage section#collectives #collectives-inner p {
+		font-size: 14px;
+		width: 90%;
+		margin: 5px auto 15px;
+	}
+	#homepage section#collectives #collectives-inner .orange-button {
+		width: 111%;
+		font-size: 22px;
+		left: -5%;
+	}
+	#homepage section#projects .project .project-details .project-details-inner .article-left {
+		margin: 10px 0 20px;
+	}
+	div.article-left {
+		width: 100%;
+
+	}
+
+	#homepage section#projects .project .project-details .project-details-inner .article-left header h3 {
+		width: 93%;
+		margin: 0 3%;
+	}
+	#homepage section#projects .project .project-details .project-details-inner .article-left header h3 img {
+		width: 100%;
+		max-width: 100%;
+	}
+	#homepage section#projects .project .project-details .project-details-inner .article-left header .project-buttons {
+		width: 100%;
+	}
+	#homepage section#projects .project .project-details .project-details-inner .article-left header .project-buttons {
+		width: 35%;
+	}
+	#homepage section#projects .project .project-details .project-details-inner .article-left header {
+		padding: 0;
+	}
+	#homepage section#projects .project .project-details .project-details-inner .article-left header .project-buttons {
+		margin-top: 0;
+		padding-right: 0;
+		width: 100%;
+		margin: 0;
+	}
+	#homepage section#projects .project .project-details .project-details-inner .article-left header .project-buttons .orange-button, 
+	#homepage section#projects .project .project-details .project-details-inner .article-left header .project-buttons .purple-button, 
+	#homepage section#projects .project .project-details .project-details-inner .article-left header .project-buttons .blue-button,
+	#homepage section#projects .project .project-details .project-details-inner .article-left header .project-buttons .green-button {
+		float: left;
+		display: block;
+		margin: 15px 0 20px 2.5%;
+		width: 45%;
+	}
+	#homepage section#projects .greatest_need .project-details .project-details-inner .article-left header .project-buttons .orange-button {
+		margin: 15px 17% 20px; 
+		float: center;
+	}
+	#homepage section#projects .project .project-details {
+		background: none!important;
+	}
+
+	#homepage section#projects .project .project-details .project-details-inner .article-left header h3.the-greatest-need-title {
+		padding: 13px 10px 0;
+		font-size: 44px;
+	}
+	
+
+	/*THE COLLECTIVE HUB*/
+	section#lead #lead-inner .orange-button,
+	section#lead #lead-inner .purple-button {
+		width: 100%!important;
+	}
+	
+	section#collective #collective-header h4, section#collective #collective-header h4 span.smaller {
+		font-size: 20px;
+		float: none;
+		margin: 0 0 10px;
+	}
+	section#profiles article {
+		width: 100%;
+	}
+	section#share .share_inner_02 h4 {
+		font-size: 20px!important;
+		line-height: 25px !important;
+	}
+	section#share #share-inner img.share-icon {
+		float: left;
+		margin-left: 5px;
+		width: 33px;
+	}
+	
+	#collective-hub-page div.article-left {
+		width: 100%;
+	}
+	#collective-hub-page div.article-left header {
+		position: relative;
+	}
+
+	h3, div.article-left .funded p, section.project-donate label span {
+		font-size: 22px;
+		margin: 0 0 20px 0;
+	}
+	div.article-image {
+		display: inline-block;
+		position: absolute;
+		right: 0;
+		width: 50%;
+		height: 100%;
+		background-size: cover;
+		background-position: center center;
+		top: 42px;
+	}
+	div.article-image div.flash {
+		position: absolute;
+		right: 0;
+		width: 0px;
+		height: 0px;
+		border-bottom: 150px solid transparent;
+		border-right: 150px solid rgba(216,39,84,0.6);
+	}
+	div.article-image div.flash.flash-funded {
+		border-right: 150px solid rgba(142,196,73,0.6);
+	}
+	div.article-image div.flash p {
+	    position: relative;
+	    top: 12px;
+	    right: -60px;
+	    width: 93px;
+	    height: 93px;
+	    margin: 0px;
+	}
+	div.article-image div.flash.flash-funded p {
+		top: 30px;
+	}
+	div.article-image div.flash p {
+		font-family: WWFRegular;
+		font-size: 26px;
+		text-align: center;
+		text-transform: uppercase;
+		color: #fff;
+		line-height: 26px;
+	}
+	#collective-hub-page .project-buttons .orange-button, 
+	#collective-hub-page .project-buttons .purple-button {
+		float: none;
+		width: 49%;
+	}
+
+	.map-overlay-outer {
+		padding: 0!important;
+		top: 0%!important;
+		height: 100%!important;
+	}
+	section#collective #collective-inner #expanded-image-container article {
+		width: 100%;
+	}
+	section.project-donate .radio div {
+		width: 100%;
+	}
+	section.project-donate .radio div.manual {
+		width: 100%;
+		text-align: center;
+	}
+	section.project-donate header p {
+		width: 30%;
+		font-size: 14px;
+	}
+	section.project-donate header h3 {
+		float: left;
+		width: 64%;
+	}
+	aside.article-image {
+		background-image: none!important;
+		width: 0!important;
+	}
+	.map-overlay p {
+		font-size: 11px;
+	}
+	#collective-hub-page div.article-left .funded p span, section.project-donate label span {
+		font-size: 18px;
+	}
 }
 /*** STYLESHEET END ***/
 
