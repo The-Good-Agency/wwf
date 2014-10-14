@@ -55,6 +55,15 @@ table {
 .right {
 	float: right;
 }
+.show_desktop {
+	display: block!important;
+}
+.show_mobile {
+	display: none!important;
+}
+.show_tablet {
+	display: none!important;
+}
 /** MISC END **/
 
 /** MAIN LAYOUT START **/
@@ -825,9 +834,10 @@ section#share #share-inner {
 section#share #share-inner h4 {
 	float: left;
 }
-section#share #share-inner .share-icon {
+section#share #share-inner img.share-icon {
 	float: right;
 	margin-left: 5px;
+	width: 43px;
 }
 /** SHARE END **/
 
@@ -1076,4 +1086,283 @@ section.project-donate .project-donate-button-container .orange-button {
 }
 /** PROJECTS END **/
 
+
+/* TABLET STYLING*/
+@media only screen and (min-width : 560px) and (max-width : 768px) {
+	.hide_tablet {
+		display: none!important;
+	}
+	.show_tablet {
+		display: block!important;
+	}
+	.desktop {
+		display: none!important;
+	}
+
+	/*HOMEPAGE*/
+	#homepage section#collectives #collectives-inner p {
+		font-size: 14px;
+	}
+	#homepage section#collectives #collectives-inner .orange-button {
+		width: 80%;
+	}
+	.orange-button, .purple-button, .blue-button, .green-button {
+		font-size: 24px;
+		line-height: 24px;
+	}
+	div.article-left {
+		width: 53%;
+	}
+	#homepage section#projects .project .project-details .project-details-inner .article-left header h3 {
+		width: 60%;
+	}
+	#homepage section#projects .project .project-details .project-details-inner .article-left header h3 img {
+		width: 90%;
+		max-width: 90%;
+	}
+	#homepage section#projects .project .project-details .project-details-inner .article-left header {
+		padding: 10px 0;
+	}
+
+	/*COLLECTIVE HUB*/
+	section#intro .article-text {
+		font-size: 14px;
+	}
+	section#collective #collective-header h4 {
+		font-size: 26px;
+	}
+	section#profiles article {
+		width: 32%;
+	}
+	section#profiles article p.name, section#profiles article p.news-update-title {
+		font-size: 22px;
+	}
+	section#collective #collective-inner #expanded-image-container article h4, 
+	section#profiles article h4,
+	section#share #share-inner h4 {
+		font-size: 26px;
+		line-height: 26px;
+	}
+	section#share #share-inner img.share-icon {
+		width: 33px;
+	}
+	.map-overlay h3 {
+		margin: 5px 0!important;
+	}
+	.map-overlay p {
+		font-size: 14px;
+	}
+	.map-overlay .orange-button,
+	.map-overlay .purple-button {
+		font-size: 17px!important;
+		float: left;
+	}
+	.map-overlay .purple-button {
+		float: right;
+	}
+	.map-overlay-outer {
+		height: 69%!important;
+	}
+
+	/*PORJECT DETAILS*/
+	.project-details div.article-left {
+		width: 50%;
+	}
+	.thank-you div.container {
+		width: 32%;
+	}
+
+}
+
+
+/* MOBILE STYLING*/
+@media only screen and (max-width : 560px) {
+/* Styles */
+	.show_desktop,
+	.desktop {
+		display: none!important;
+	}
+	.show_mobile {
+		display: block!important;
+	}
+	/*HOMEPAGE*/
+	#homepage #header-outer-container h2 {
+		font-size: 50px;
+	}
+	#homepage #header-outer-container h3 {
+		font-size: 21px;
+	}
+	#homepage section#collectives #collectives-inner h3 {
+		font-size: 28px;
+	}
+	#homepage section#collectives #collectives-inner p {
+		font-size: 13px;
+	}
+	/*#homepage section#collectives #collectives-inner article .purple-button, 
+	#homepage section#collectives #collectives-inner article .blue-button, 
+	#homepage section#collectives #collectives-inner article .green-button {
+		padding: 10px 20px 10px 15px;
+	}*/
+	#homepage section#collectives #collectives-inner .orange-button {
+		width: 95%;
+		font-size: 22px;
+	}
+	/*THE WILDLIFE COLLECTIVE*/
+	#homepage section#projects .project .project-details .project-details-inner .article-left header {
+		padding: 10px 0;
+	}
+	#homepage section#projects .project .project-details .project-details-inner .article-left header h3 {
+		width: 55%;
+	}
+	div.article-left {
+		width: 58%;
+	}
+	#homepage section#projects .project .project-details .project-details-inner .article-left header .project-buttons .orange-button, 
+	#homepage section#projects .project .project-details .project-details-inner .article-left header .project-buttons .purple-button, 
+	#homepage section#projects .project .project-details .project-details-inner .article-left header .project-buttons .blue-button, 
+	#homepage section#projects .project .project-details .project-details-inner .article-left header .project-buttons .green-button {
+		margin-top: 4px;
+	}
+	#homepage section#projects .project .project-details .project-details-inner .article-left header h3.the-greatest-need-title {
+		padding: 13px 10px 0;
+		font-size: 25px;
+	}
+	#homepage section#projects .project .project-details .project-details-inner .article-left header .project-buttons {
+		width: 45%;
+	}
+	div.article-left p {
+		font-size: 13px;
+		line-height: 17px;
+	}
+	.orange-button, 
+	.purple-button, 
+	.blue-button, 
+	.green-button {
+		font-size: 17px;
+	}
+	#homepage section#projects .project .project-details .project-details-inner .article-left header h3 img {
+		width: 90%;
+	}
+	.thank-you div.container {
+		width: 32%;
+	}
+
+
+	/*COLLECTIVE HUB*/
+	section#intro {
+		margin-top: 0px;
+	}
+	h3, 
+	div.article-left .funded p, 
+	section.project-donate label span {
+		font-size: 22px;
+	}
+	section#lead #lead-inner .orange-button {
+		width: 41%;
+	}
+	section#lead #lead-inner .purple-button {
+		width: 34%;
+	}
+	#collective-hub-page .orange-button, 
+	#collective-hub-page .purple-button, 
+	#collective-hub-page .blue-button, 
+	#collective-hub-page .green-button {
+		font-size: 19px;
+	}
+	section#intro .article-text {
+		width: 100%;
+	}
+	section#intro .article-text, 
+	section#intro #video-container {
+		width: 96%;
+		padding: 10px;
+		font-size: 14px;
+	}
+	section#collective #collective-header h4,
+	section#collective #collective-header h4 span.smaller {
+		font-size: 22px;
+	}
+	section#profiles article {
+		width: 49%;
+	}
+	section#profiles article.latest_collective_news {
+		width: 100%;
+	}
+	section#profiles article p.name, 
+	section#profiles article p.news-update-title {
+		font-size: 20px;
+	}
+	section#profiles article aside {
+		width: 50%;
+	}
+	section#share .share_inner_02 h4 {
+		font-size: 18px!important;
+		line-height: 25px;
+	}
+	section#collective #collective-inner #expanded-image-container {
+		padding: 10px 5%;
+	}
+	section#collective #collective-inner #expanded-image-container article h4 {
+		margin: -2.5% 0 2.5%;
+	}
+	section#collective #collective-inner #expanded-image-container article h4, 
+	section#profiles article h4, 
+	section#share #share-inner h4 {
+		font-size: 26px;
+	}
+	section#collective #collective-inner #expanded-image-container article p {
+		font-size: 14px;
+		line-height: 16px;
+	}
+	section#share #share-inner img.share-icon {
+		width: 30px;
+		margin-top: 8px;
+	}
+	section#map #map-top-text {
+		font-size: 24px;
+	}
+
+	#collective-hub-page div.article-left {
+		width: 50%;
+	}
+	#collective-hub-page  div.article-left .funded p, 
+	section.project-donate label span {
+		font-size: 18px;
+	}
+	#collective-hub-page .project-buttons .orange-button, 
+	#collective-hub-page .project-buttons .purple-button {
+		float: none;
+		width: 55%;		
+	}
+	#collective-hub-page .project-buttons .purple-button {
+		margin: 10px 0px;
+	}
+	section.project-donate .radio div {
+		width: 18%;
+	}
+	section.project-donate .manual p span {
+		margin-right: 5px;
+	}
+	.map-overlay h3 {
+		margin: 5px 0!important;
+	}
+	.map-overlay p {
+		margin: 5px 0!important;
+		font-size: 13px;
+	}
+	.map-overlay .orange-button,
+	.map-overlay .purple-button {
+		padding: 5px 24px 5px 15px!important;
+		font-size: 14px!important;
+		float: left;
+	}
+	.map-overlay .purple-button {
+		float: right;
+	}
+	.map-overlay-outer {
+		height: 75%!important;
+	}
+
+}
 /*** STYLESHEET END ***/
+

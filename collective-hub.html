@@ -4,18 +4,21 @@
 		<meta charset="UTF-8">
 		<title>The Wildlife Collective</title>
   		<!--[if lt IE 9]>
-  		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   		<![endif]-->
 		<link rel="stylesheet" type="text/css" href="style.css">
-		<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>-->
-		<script src="js/jquery-2.1.1.min.js" type="text/javascript"></script>
+		<script src="js/jquery-1.11.1.min.js" type="text/javascript"></script>
 		<script src="js/jquery.backgroundSize.js" type="text/javascript"></script>
 
 		<script src="js/custom.js" type="text/javascript"></script>
 	</head>
 	<body id="collective-hub-page">
 		<header id="collective-hub">
-			<h2><img src="images/header.jpg" alt="The Wildlife Collective" /></h2>
+			<h2>
+				<img src="images/header.jpg" alt="The Wildlife Collective" class="desktop" />
+				<img src="images/header_tablet.jpg" alt="The Wildlife Collective" class="show_tablet" />
+				<img src="images/header_mobile.jpg" alt="The Wildlife Collective" class="show_mobile" />
+			</h2>
 		</header>
 
 		<section id="lead">
@@ -134,7 +137,7 @@
 					<p><a href="mailto:hello@wwf.org.uk">hello@wwf.org.uk</a></p>
 					<p><a href="https://twitter.com/TwitterHandle">@TwitterHandle</a></p>
 				</article>
-				<article>
+				<article class="latest_collective_news">
 					<header>
 						<h4>Lattest Collective News</h4>
 					</header>
@@ -146,11 +149,11 @@
 		</section>
 
 		<section id="share">
-			<div id="share-inner" class="page-section">
+			<div id="share-inner" class="page-section share_inner_02">
 				<h4>Share lorem ipsum dolor sit amet, consectetur adipiscing elit sed aliquam quis</h4>
-				<a href="#"><img src="images/share_icon_google_plus.png" width="43" height="43" alt="Share on Google+" class="share-icon" /></a>
-				<a href="#"><img src="images/share_icon_facebook.png" width="43" height="43" alt="Share on Facebook" class="share-icon" /></a>
-				<a href="#"><img src="images/share_icon_twitter.png" width="43" height="43" alt="Share on Twitter" class="share-icon" /></a>
+				<a href="#"><img src="images/share_icon_google_plus.png" width="100%" alt="Share on Google+" class="share-icon" /></a>
+				<a href="#"><img src="images/share_icon_facebook.png" width="100%" alt="Share on Facebook" class="share-icon" /></a>
+				<a href="#"><img src="images/share_icon_twitter.png" width="100%" alt="Share on Twitter" class="share-icon" /></a>
 				<div class="clear"><!-- --></div>
 			</div>
 		</section>
