@@ -1,0 +1,1393 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*** STYLESHEET START ***/
+
+/** MISC START **/
+.clear {
+	display: block;
+	clear: both;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+/** MISC END **/
+
+/** MAIN LAYOUT START **/
+body {
+	text-align: center;
+}
+
+.page-section {
+	margin: 0 auto;
+	max-width: 960px;
+	overflow: hidden;
+	text-align: left;
+}
+/** MAIN LAYOUT END **/
+
+/** FONT FACE START **/
+@font-face {
+    font-family: 'WWFRegular';
+    src: url('http://www.wwf.org.uk/_css/font/wwf-webfont.eot');
+    src: url('http://www.wwf.org.uk/_css/font/wwf-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://www.wwf.org.uk/_css/font/wwf-webfont.woff') format('woff'),
+         url('http://www.wwf.org.uk/_css/font/wwf-webfont.ttf') format('truetype'),
+         url('http://www.wwf.org.uk/_css/font/wwf-webfont.svg#WWFRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* using modernizr to detect lack of @font-face support and adjust the size of arial to fit */
+.no-fontface #tpmmdi h1 {font-size:300%;}
+.no-fontface #tpmmdi div.tpmmdi-do div.article div.body h2 {font-size:108%;font-weight:bold;}
+.no-fontface #tpmmdi div.tpmmdi-sidebar div.twitter h3 {font-size:150%;font-weight:bold;}
+.no-fontface #tpmmdi a.button {font-size:80%;line-height:160%;}
+.no-fontface #tpmmdi div.tpmmdi-sidebar div.facebook h3 {font-size:150%;font-weight:bold;}
+.no-fontface #tpmmdi div.tpmmdi-do div.article div.body form h3 {font-size:150%;font-weight:bold}
+.no-fontface #tpmmdi div.tpmmdi-carousel div.about h2 {font-size:150%;font-weight:bold;}
+.no-fontface #tpmmdi div.tpmmdi-carousel div.about a.button {font-size:150%;line-height:160%;}
+.no-fontface #tpmmdi a.do-it{font-size:130%;line-height:110%;}
+.no-fontface #tpmmdi div.tpmmdi-wwyd h2{font-size:200%; font-weight:bold;}
+.no-fontface #tpmmdi div.tpmmdi-social div.box h3 {font-size:150%; font-weight:bold;}
+.no-fontface #tpmmdi div.tpmmdi-content div.tpmmdi-iasa h2 {font-size:200%;font-weight:bold;}
+.no-fontface #tpmmdi div.tpmmdi-content div.tpmmdi-iasa ul li span.title {font-size:200%;font-weight:bold;}
+.no-fontface #tpmmdi div.tpmmdi-content div.tpmmdi-iasa ul li span.detail {font-size:100%;font-weight:bold;}
+.no-fontface #tpmmdi div.tpmmdi-sidebar div.social-links h3 {font-size:150%;font-weight:bold;}
+.no-fontface .mainstage a.main_story .headline h1 {font-size:18pt;}
+.no-fontface #social_footer h3 {font-size:.97em;font-weight:bold;}
+/** FONT FACE END **/
+
+/** TYPOGRAPHY START **/
+
+body {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+section#lead #lead-inner {
+	text-align: center;
+}
+section#lead #lead-inner h3 {
+	margin: 10px 0;
+	text-transform: none;
+}
+section#lead #lead-inner p {
+	margin: 20px 0 15px;
+}
+section#lead #lead-inner p span.or {
+	font-family: WWFRegular;
+	font-size: 36px;
+	color: #333333;
+}
+
+section#intro p {
+	margin: 10px 0 20px;
+}
+section#intro p strong {
+	font-weight: bold;
+}
+
+section#collective #collective-header h4 {
+	font-family: WWFRegular;
+	font-size: 46px;
+	color: #fff;
+}
+section#collective #collective-header h4 span.smaller {
+	font-size: 32px;
+}
+section#collective #collective-inner #expanded-image-container article h4 {
+	margin: 7.5% 0 2.5%;
+}
+section#collective #collective-inner #expanded-image-container article h4,
+section#profiles article h4,
+section#share #share-inner h4 {
+	font-family: WWFRegular;
+	font-size: 32px;
+	line-height: 43px;
+	color: #333333;	
+}
+section#collective #collective-inner #expanded-image-container article h4 span.smaller {
+	font-size: 26px;
+}
+section#collective #collective-inner #expanded-image-container article p {
+	font-size: 16px;
+	line-height: 20px;
+}
+section#profiles article h4 {
+	margin-bottom: 10px;
+	color: #9a0064;
+}
+section#profiles article p.name,
+section#profiles article p.news-update-title {
+	margin: 20px 0 5px;
+	font-family: WWFRegular;
+	font-size: 24px;
+}
+section#profiles article a {
+	display: inline-block;
+	margin: 10px 0;
+	color: #333;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+section#map #map-top-text {
+	margin: 30px 0;
+	font-family: WWFRegular;
+	font-size: 36px;
+	text-align: center;	
+}
+section#map #map-container .live-pin {
+	text-decoration: none;
+	color: #333;
+}
+section#map #map-container .live-pin:hover {
+	text-decoration: underline;
+}
+section#map #map-container .live-pin span {
+	position: relative;
+	top: 18%;
+	right: -111%;
+	display: block;
+	font-family: WWFRegular;
+	font-size: 24px;
+	width: 112px;
+}
+section#map .map-overlay span.close {
+	font-size: 14px;
+}
+
+h3,
+div.article-left .funded p,
+section.project-donate label span {
+	font-family: WWFRegular;
+	font-size: 32px;
+	text-transform: uppercase;
+	color: #333333;
+}
+div.article-left .funded p span.smaller,
+section.project-donate .manual label span {
+	font-size: 26px;
+}
+section.project-donate .manual label span {
+	text-transform: none;
+}
+section.project-donate .manual p span {
+	font-family: WWFRegular;
+	font-size: 32px;
+	color: #333333;
+	vertical-align: middle;	
+}
+section.project-donate header p {
+	font-size: 14px;
+}
+section.project-donate article p {
+	font-size: 14px;
+	line-height: 18px;
+}
+
+div.article-left p {
+	margin: 20px 0;
+	line-height: 20px;
+	font-weight: bold;
+}
+
+div.article-left section.funded p {
+	margin: 15px 0;
+}
+
+aside.article-image div.flash p {
+    font-family: WWFRegular;
+    font-size: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.orange-button,
+.purple-button,
+.blue-button,
+.green-button {
+    font-family: WWFRegular;
+    font-size: 26px;
+    line-height: 26px;
+    text-align: center;	
+	color: #fff;
+}
+section#lead #lead-inner .purple-button {
+	color: #9a0064;
+}
+section#lead #lead-inner .purple-button:hover {
+	text-decoration: underline;
+}
+
+.thank-you h3 {
+    font-family: WWFRegular;
+    font-size: 26px;
+}
+.thank-you div.donation-amount {
+	margin-right: 5px;
+    font-family: WWFRegular;
+    font-size: 32px;
+}
+.thank-you div.container div h4 {
+	font-family: WWFRegular;
+    font-size: 20px;
+}
+.thank-you div.container div p {
+	margin: 0;
+	font-weight: normal;
+	font-size: 13px;
+}
+
+/********* HOMEPAGE TYPOGRAPHY START *********/
+#homepage #header-outer-container h2,
+#homepage #header-outer-container h3 {
+	font-family: WWFRegular;
+	color: #fff;
+	text-transform: none;
+}
+#homepage #header-outer-container h2 {
+	font-size: 83px;
+}
+#homepage #header-outer-container h3 {
+	margin: 10px 0 65px;
+	font-size: 42px;
+	text-shadow: 0px 0px 20px rgba(0,0,0,0.75);
+}
+#homepage #header-outer-container p {
+	line-height: 20px;
+	color: #fff;
+}
+#homepage #header-outer-container p:last-child {
+	margin-bottom: 0;
+}
+
+#homepage section#collectives #collectives-inner {
+	text-align: center;
+}
+#homepage section#collectives #collectives-inner h3 {
+	margin: 10px 0;
+	text-transform: none;
+}
+#homepage section#collectives #collectives-inner p {
+	margin: 20px 0 15px;
+}
+#homepage section#collectives #collectives-inner p span.or {
+	font-family: WWFRegular;
+	font-size: 36px;
+	color: #333333;
+}
+#homepage section#collectives #collectives-inner h3 {
+	font-size: 42px;
+}
+
+#homepage section#projects .project .project-details .project-details-inner .article-left,
+#homepage section#projects .project .project-details .project-details-inner .article-left h3,
+#homepage section#projects .project .project-details .project-details-inner .article-left p {
+	color: #fff;
+}
+#homepage section#projects .project .project-details .project-details-inner .article-left header {
+	background: #f6f6eb;
+}
+#homepage section#projects .project .project-details .project-details-inner .article-left header h3 {
+	float: left;
+	width: 65%;
+	text-align: center;
+}
+#homepage section#projects .project .project-details .project-details-inner .article-left header h3.the-greatest-need-title {
+	padding: 15px;
+	box-sizing: border-box;
+ 	color: #033333;
+ 	font-size: 44px;
+}
+#homepage section#projects .project .project-details .project-details-inner .article-left header h3 img {
+	width: 100%;
+	height: auto;
+	max-width: 250px;
+}
+#homepage section#projects .project .project-details .project-details-inner .article-left header .project-buttons {
+	float: right;
+	margin-top: 0;
+	padding-right: 15px;
+	box-sizing: border-box;
+	width: 35%;
+}
+#homepage section#projects .project .project-details .project-details-inner .article-left header .project-buttons .orange-button,
+#homepage section#projects .project .project-details .project-details-inner .article-left header .project-buttons .purple-button,
+#homepage section#projects .project .project-details .project-details-inner .article-left header .project-buttons .blue-button,
+#homepage section#projects .project .project-details .project-details-inner .article-left header .project-buttons .green-button {
+	float: none;
+	display: block;
+	margin-top: 15px;
+	width: 100%;
+}
+/********* HOMEPAGE TYPOGRAPHY END *********/
+
+/********* PROJECT PAGE TYPOGRAPHY START *********/
+
+/********* PROJECT PAGE TYPOGRAPHY END *********/
+
+/** TYPOGRAPHY END **/
+
+/** BUTTONS START **/
+.orange-button,
+.purple-button,
+.blue-button,
+.green-button {
+	box-sizing: border-box;
+	position: relative;
+	display: inline-block;
+	padding: 10px 15px 10px 0;
+	border-radius: 3px;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s;
+	-ms-transition: all 1s;
+	-o-transition: all 1s;
+	transition: all 1s;
+}
+.orange-button:before,
+.orange-button:after,
+.purple-button:before,
+.purple-button:after,
+.blue-button:before,
+.blue-button:after,
+.green-button:before,
+.green-button:after {
+	top: 16px;
+    position:absolute;
+    display:block;
+    content:"";
+    border:8px solid transparent;/*adjust size*/
+}
+/*Change four 'top' values below to rotate (top/right/bottom/left)*/
+.orange-button:before,
+.purple-button:before,
+.blue-button:before,
+.green-button:before {
+    right:4px;
+    border-left-color:#fff;/*Chevron Color*/
+}
+.orange-button:after,
+.purple-button:after,
+.blue-button:after,
+.green-button:after {
+    right:6px;/*adjust thickness*/
+}
+.orange-button:after {
+	border-left-color:#da681c;/*Match background colour*/
+}
+.purple-button:after {
+    border-left-color:#9a0064;/*Match background colour*/
+}
+.blue-button:after {
+	border-left-color:#0095da;/*Match background colour*/
+}
+.green-button:after {
+    border-left-color:#7b8426;/*Match background colour*/
+}
+.orange-button:hover,
+.purple-button:hover,
+.blue-button:hover,
+.green-button:hover {
+	cursor: pointer;
+	cursor: hand;
+}
+.orange-button:hover,
+.purple-button:hover,
+.blue-button:hover,
+.green-button:hover,
+.orange-button.active,
+.purple-button.active,
+.blue-button.active,
+.green-button.active {
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+}
+.orange-button {
+	background: #da681c;
+}
+.purple-button {
+	background: #9a0064;
+}
+.blue-button {
+	background: #0095da;
+}
+.green-button {
+	background: #7b8426;
+}
+
+section#lead #lead-inner .orange-button {
+	width: 300px;
+}
+section#lead #lead-inner .purple-button {
+	background: none;
+	width: 250px;
+}
+section#lead #lead-inner .purple-button:before {
+    right:4px;
+    border-left-color:#9a0064;/*Chevron Color*/
+}
+section#lead #lead-inner .purple-button:after {
+    border-left-color:#f6f6eb;/*Match background colour*/
+}
+section#lead #lead-inner .purple-button:hover {
+	opacity: 1;
+}
+
+.project-buttons {
+	margin-top: 27px;
+}
+.project-buttons .orange-button,
+.project-buttons .purple-button {
+	float: left;
+	width: 49%;
+}
+.project-buttons .purple-button {
+	float: right;
+}
+
+section.project-donate header .close-button {
+	display: inline-block;
+	position: relative;
+	margin-left: 10px;
+	width: 30px;
+	height: 30px;
+	background: #9a0064;
+	border-radius: 15px;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s;
+	-ms-transition: all 1s;
+	-o-transition: all 1s;
+	transition: all 1s;
+	vertical-align: middle;
+}
+section.project-donate header .close-button:before,
+section.project-donate header .close-button:after {
+	left: 7px;
+    position:absolute;
+    display:block;
+    content:"";
+    border:8px solid transparent;/*adjust size*/
+}
+section.project-donate header p:hover > .close-button {
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+}
+/*Change four 'top' values below to rotate (top/right/bottom/left)*/
+section.project-donate header .close-button:before {
+    top:2px;
+    border-bottom-color:#fff;/*Chevron Color*/
+}
+section.project-donate header .close-button:after {
+    top:4px;/*adjust thickness*/
+}
+section.project-donate header .close-button:after {
+    border-bottom-color:#9a0064;/*Match background colour*/
+}
+
+/********* HOMEPAGE BUTTONS START *********/
+#homepage section#collectives #collectives-inner .orange-button {
+	width: 500px;
+}
+#homepage section#collectives #collectives-inner article .purple-button,
+#homepage section#collectives #collectives-inner article .blue-button,
+#homepage section#collectives #collectives-inner article .green-button {
+	padding: 10px 40px 10px 25px;
+}
+
+/********* HOMEPAGE BUTTONS END *********/
+
+
+/** BUTTONS END **/
+
+
+
+/********* HOMEPAGE START *********/
+
+/** HEADER START **/
+#homepage #header-outer-container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 15px 0 40px;
+	background: url('images/homepage_header_bg.jpg') no-repeat center center;
+	background-size: cover;
+}
+#homepage #header-outer-container article {
+	background: rgba(29,37,45,0.6);
+}
+#homepage section#intro #video-container #video {
+	margin-bottom: -3px;
+}
+/** HEADER END **/
+
+/** COLLECTIVES START **/
+section#collectives {
+	background: #f6f6eb;
+}
+section#collectives #collectives-inner {
+	padding: 10px;
+	box-sizing: border-box;
+}
+section#collectives article {
+	display: inline-block;
+	width: 32%;
+	vertical-align: top;
+	margin-top: 20px;
+}
+section#collectives article img {
+	width: 100%;
+	max-width: 291px;
+	height: auto;
+}
+/** COLLECTIVES END **/
+
+/** PROJECTS START **/
+#homepage section#projects {
+	margin-bottom: 0;
+	max-width: none;
+	text-align: center;
+}
+#homepage article.project {
+	margin-top: 0;
+}
+#homepage article.project .project-details {
+	margin: 0 auto;
+	max-width: 1200px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+#homepage section#projects .project .project-details .project-details-inner,
+#homepage section#projects .project .project-donate {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 960px;
+}
+#homepage section#projects .project .project-donate p.tabs {
+	text-align: left;
+	margin-top: 15px;
+	font-family: WWFRegular;
+	font-size: 26px;
+	color: #333333;
+}
+#homepage section#projects .project .project-donate p.tabs span {
+	padding: 12px 5% 15px;
+	display: inline-block;
+	cursor: pointer;
+	cursor: hand;
+	border: 3px solid #dfdfd0;
+	border-bottom: 0;
+	margin-left: 15px;
+}
+#homepage section#projects .project .project-donate p.tabs span.active,
+#homepage section#projects .project .project-donate p.tabs span:hover {
+	padding: 12px 5%;
+	background: #dfdfd0;
+	border: 3px solid #dfdfd0;	
+}
+#homepage section#projects .project .project-donate article {
+	border: 3px solid #dfdfd0;
+	border-bottom: 0;
+}
+#homepage section#projects .project .project-details .project-details-inner {
+	text-align: right;
+}
+#homepage section#projects .project .project-details .project-details-inner .article-left {
+	margin: 45px 0;
+	padding: 0;
+	background: rgba(0,0,0,0.6);
+	text-align: left;
+}
+#homepage section#projects .project .project-details .project-details-inner .article-left article {
+	padding: 0 15px 15px;
+}
+#homepage section#projects .project .project-details .project-details-inner .article-left article section.thank-you p.raised-so-far {
+	margin: 0;
+	font-size: 32px;
+	text-transform: uppercase;
+	font-family: WWFRegular;
+}
+#homepage section#projects .project .project-details .project-details-inner .article-left article section.thank-you p span.smaller {
+	font-size: 26px;
+}
+/** PROJECTS END **/
+
+/********* HOMEPAGE END *********/
+
+
+/********* PROJECT PAGE START *********/
+
+/** HEADER START **/
+#project-page #header-outer-container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 10px;
+	height: 240px;
+	background: url('images/homepage_header_bg.jpg') no-repeat center center;
+	background-size: cover;
+}
+#project-page #header-outer-container header,
+#project-page #header-outer-container header h3 {
+	color: #fff;
+}
+#project-page #header-outer-container header h1 {
+	margin-top: 10px;
+	font-size: 42px;
+	text-transform: uppercase;
+	font-family: WWFRegular;
+}
+#project-page #header-outer-container header h3 {
+	font-size: 28px;
+}
+#project-page #header-outer-container header {
+	position: relative;
+	max-width: 940px;
+	height: 100%;
+}
+#project-page #header-outer-container div.left,
+#project-page #header-outer-container div.right {
+	position: absolute;
+	bottom: 15px;
+}
+#project-page #header-outer-container div.right {
+	right: 0;
+	background: url('images/project_page_header_icon.png') #f6f6eb no-repeat center center;
+	background-size: contain;
+	width: 32%;
+	height: 113px;
+	box-sizing: border-box;
+}
+/** HEADER END **/
+
+#project-page section.page-section {
+	margin-top: 12px;
+	padding: 0 10px;
+	box-sizing: border-box;
+}
+
+/** ARTICLE START **/
+#project-page section.page-section article#project-page-article {
+	float: left;
+	width: 68%;
+	padding-right: 10px;
+	box-sizing: border-box;
+}
+#project-page section.page-section article#project-page-article img.video-image {
+	width: 100%;
+	height: auto;
+}
+#project-page section.page-section article#project-page-article h2 {
+	margin: 20px 0;
+	font-size: 32px;
+	font-family: WWFRegular;	
+}
+#project-page section.page-section article#project-page-article p {
+	clear: both;
+	margin: 20px 0;
+}
+#project-page section.page-section article#project-page-article p strong {
+	font-weight: bold;
+}
+#project-page section.page-section article#project-page-article p img {
+	max-width: 100%;
+}
+#project-page section.page-section article#project-page-article p img.left {
+	margin: 0 15px 15px 0;
+}
+#project-page section.page-section article#project-page-article p img.right {
+	margin: 0 0 15px 15px;
+}
+#project-page section.page-section article#project-page-article section.project-donate {
+	display: block;
+	background: #f6f6eb;
+}
+
+/* GALLERY START */
+#project-page section.page-section article#project-page-article section.gallery .gallery-main-image {
+	width: 100%;
+}
+#project-page section.page-section article#project-page-article section.gallery .gallery-thumbnail-image {
+	float: left;
+	width: 13.4275%;
+	height: auto;
+	margin-top: 0.5%;
+	margin-left: 1%;
+}
+#project-page section.page-section article#project-page-article section.gallery .gallery-thumbnail-image.first {
+	margin-left: 0;
+}
+/* GALLERY END */
+
+/** ARTICLE END **/
+
+/** ASIDE START **/
+#project-page section.page-section aside {
+	float: left;
+	width: 32%;
+}
+
+#project-page section.page-section .funded {
+	margin-bottom: 15px;
+}
+#project-page section.page-section .funded .funding-goal {
+	width: 100%;
+	height: 32px;
+	background: #d2d2d2;
+}
+#project-page section.page-section .funded .funding-goal .funding-total {
+	height: 100%;
+	background: #9a0064;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s;
+	-ms-transition: all 1s;
+	-o-transition: all 1s;
+	transition: all 1s;	
+}
+#project-page section.page-section .funded .funding-goal .funding-total.inactive {
+	width: 0 !important;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s;
+	-ms-transition: all 1s;
+	-o-transition: all 1s;
+	transition: all 1s;	
+}
+
+#project-page section.page-section aside section.thank-you {
+	margin-top: 0;
+	padding: 0 10px 20px;
+}
+#project-page section.page-section aside section.thank-you div.container {
+	width: 49%;
+}
+
+#project-page section.page-section aside section#collective #collective-inner {
+	padding-top: 2.5%;
+}
+#project-page section.page-section aside section#collective #collective-inner .collective-images img {
+	margin: 0 0 2.5% 2.5%;
+	width: 23%;
+}
+#project-page section.page-section aside section#collective #collective-inner .collective-images img.first {
+	clear: both;
+	margin-left: 0;
+}
+#project-page section.page-section aside section#collective #collective-inner #expanded-image-container {
+	margin-bottom: 2.5%;
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#project-page section.page-section aside section#collective #collective-inner #expanded-image-container img {
+	float: none;
+	margin-top: 15%;
+	width: 50%;
+}
+#project-page section.page-section aside section#collective #collective-inner #expanded-image-container article {
+	float: none;
+	width: 100%;
+	text-align: left;
+}
+
+/* UPDATES AND NEWS START */
+#project-page section.page-section aside section#updates-and-news {
+	margin-top: 25px;
+	background: #f6f6eb;
+	padding: 25px 10px 5px;
+	box-sizing: border-box;
+}
+#project-page section.page-section aside section#updates-and-news h3 {
+	font-size: 26px;
+}
+#project-page section.page-section aside section#updates-and-news article h2 {
+	margin-top: 15px;
+	font-size: 22px;
+	font-family: WWFRegular;
+	color: #333;
+}
+#project-page section.page-section aside section#updates-and-news article img {
+	margin: 10px 0;
+	width: 100%;
+}
+#project-page section.page-section aside section#updates-and-news article p.link-paragraph {
+	margin: 15px 0;
+}
+#project-page section.page-section aside section#updates-and-news article p.link-paragraph a {
+	color: #9a0064;
+	text-decoration: none;
+	font-weight: bold;
+}
+#project-page section.page-section aside section#updates-and-news article p.link-paragraph a:hover {
+	text-decoration: underline;
+}
+/* UPDATES AND NEWS END */
+
+/* SHARE START */
+#project-page section.page-section aside section#share {
+	background: none;
+}
+#project-page section.page-section aside section#share h4 {
+	font-size: 22px;
+}
+/* SHARE END */
+/** ASIDE END **/
+
+/** DONATE START **/
+
+#project-page section.page-section article#project-page-article section.funded,
+#project-page section.page-section article#project-page-article section.thank-you {
+	vertical-align: top;
+	display: inline-block;
+	width: 42.5%;
+}
+#project-page section.page-section article#project-page-article section.funded {
+	width: 54%;
+}
+#project-page section.page-section article#project-page-article section.thank-you {
+	margin-left: 2.5%;
+}
+#project-page section.page-section article#project-page-article .funded p {
+	clear: none !important;
+	font-family: WWFRegular;
+	font-size: 32px;
+	text-transform: uppercase;
+	color: #333333;
+}
+#project-page section.page-section article#project-page-article .funded p span.smaller {
+	font-size: 26px;
+}
+
+#project-page section.project-donate {
+	display: block;
+}
+#project-page section.project-donate header#donate-header {
+	background: #9a0064;
+}
+#project-page section.project-donate header#donate-header h4 {
+	font-family: WWFRegular;
+	font-size: 36px;
+	color: #fff;
+}
+#project-page section.project-donate header#donate-header h4 span.smaller {
+	font-size: 26px;
+}
+
+#project-page section.project-donate .radio div {
+	width: 17% !important;
+}
+#project-page article#project-page-article section.project-donate .radio div.manual p {
+	margin-top: 0 !important;
+}
+
+#project-page section.project-donate label {
+	padding: 0;
+}
+#project-page section.project-donate label:before {
+	position: static;
+	margin-right: 0;
+	margin-bottom: 10px;
+}
+#project-page section.project-donate label span {
+	display: block;
+}
+#project-page section.project-donate div.manual {
+	width: auto !important;
+}
+#project-page section.project-donate div.manual label {
+	margin-bottom: 20px;
+	padding-left: 25px;
+}
+#project-page section.project-donate div.manual label:before {
+	margin-right: 10px;
+	position: absolute;
+	margin-bottom: 0;
+}
+#project-page section.project-donate div.manual label span {
+	display: inline;
+}
+
+#project-page section.page-section aside section.project-donate .radio div {
+	width: 28% !important;
+}
+#project-page section.page-section aside section#donate.project-donate .radio div.manual p {
+	width: 100%;
+}
+#project-page section.page-section aside section.project-donate article {
+	padding-top: 20px;
+}
+#project-page section.page-section aside section.project-donate .radio div.manual {
+	margin-top: 0;
+	width: auto !important;
+}
+
+#project-page section.page-section aside section.project-donate .project-donate-button-container .orange-button {
+	width: 100%;
+}
+/** DONATE END **/
+
+/********* PROJECT PAGE END *********/
+
+
+/** HEADER START **/
+header#collective-hub img {
+	margin-bottom: -3px;
+	width: 100%;
+	*width: 1200px;
+	max-width: 1200px;
+}
+/** HEADER END **/
+
+/** DONATE START **/
+section#donate {
+	background: #f6f6eb;
+}
+section#donate.project-donate .radio div {
+	width: 14.5%;
+}
+section#donate.project-donate .radio div.manual {
+	width: 39%;
+}
+section#donate.project-donate .radio div.manual p {
+	position: relative;
+	display: inline-block;
+	top: -4px;
+	margin-top: 0;
+}
+/** DONATE END **/
+
+/** LEAD START **/
+section#lead {
+	background: #f6f6eb;
+}
+section#lead #lead-inner {
+	padding: 10px;
+	box-sizing: border-box;
+}
+/** LEAD END **/
+
+/** INTRO START **/
+section#intro {
+	margin-top: 25px;
+}
+section#intro .article-text,
+section#intro #video-container {
+	float: left;
+	width: 49%;
+}
+section#intro .article-text {
+	width: 51%;
+	padding: 0 20px 0 10px;
+	box-sizing: border-box;
+}
+section#intro #video-container #video {
+	width: 100%;
+}
+/** INTRO END **/
+
+/** COLLECTIVE START **/
+section#collective {
+	margin-top: 25px;
+	background: #f6f6eb;
+}
+section#collective #collective-header {
+	background: #9a0064;
+	text-align: left;
+}
+section#collective #collective-header .page-section {
+	padding: 10px;
+	box-sizing: border-box;
+}
+section#collective #collective-inner {
+	padding: 28px 10px;
+	padding-bottom: 0;
+	box-sizing: border-box;
+}
+section#collective #collective-inner .collective-images img {
+	float: left;
+	margin: 0 0 1.1% 1.1%;
+	width: 9%;
+	height: auto;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s;
+	-ms-transition: all 1s;
+	-o-transition: all 1s;
+	transition: all 1s;
+	box-shadow: #000 0em 0em 0em;
+}
+section#collective #collective-inner .collective-images img.active,
+section#collective #collective-inner .collective-images img:hover {
+	opacity: 0.5;	
+}
+section#collective #collective-inner .collective-images img:hover {
+	cursor: pointer;
+	cursor: hand;
+}
+section#collective #collective-inner .collective-images img.first {
+	margin-left: 0;
+}
+section#collective #collective-inner #expanded-image-container {
+	display: none;
+	position: relative;
+	clear: both;
+	background: #fff;
+	margin-bottom: 1.1%;
+	padding: 10px 10.1%;
+}
+section#collective #collective-inner #expanded-image-container img {
+	float: left;
+	margin-right: 2%;
+	width: 36%;
+	height: auto
+}
+section#collective #collective-inner #expanded-image-container article {
+	float: left;
+	width: 62%;
+}
+section#collective #collective-inner #expanded-image-container span.close {
+	position: absolute;
+	top: 15px;
+	right: 10px;
+}
+section#collective #collective-inner #expanded-image-container span.close:hover {
+	cursor: pointer;
+	cursor: hand;
+	text-decoration: underline;
+}
+/** COLLECTIVE END **/
+
+/** PROFILES START **/
+section#profiles {
+	background: #f6f6eb;
+}
+section#profiles #profiles-inner {
+	padding: 18px 10px 28px;
+	box-sizing: border-box;
+}
+section#profiles #profiles-inner .divider {
+	padding: 0 0 15px;
+	border-top: 4px solid #d2d2d2;
+}
+section#profiles article {
+	display: inline-block;
+	width: 33%;
+	vertical-align: top;
+}
+section#profiles article aside {
+	float: left;
+	margin-right: 8px;
+	width: 138px;
+	height: 140px;
+	background-size: cover;
+	background-position: center -2px;
+	background-repeat: no-repeat;
+} 
+/** PROFILES END **/
+
+/** SHARE START **/
+section#share {
+	background: #dfdfd0;
+}
+section#share #share-inner {
+	padding: 10px;
+	box-sizing: border-box;
+}
+section#share #share-inner h4 {
+	float: left;
+}
+section#share #share-inner .share-icon {
+	float: right;
+	margin-left: 5px;
+}
+/** SHARE END **/
+
+/** MAP START **/
+section#map #map-container {
+	position: relative;
+}
+section#map #map-container #map-image {
+	width: 100%;
+	height: auto;
+	z-index: 0;
+}
+section#map #map-container .pin,
+section#map #map-container .live-pin {
+	position: absolute;
+	z-index: 1;
+	background-size: 100%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	-moz-transition: all 0.55s cubic-bezier(0.25, -1.33, 1, 1.33);
+	-webkit-transition: all 0.55s cubic-bezier(0.25, -1.33, 1, 1.33);
+	-ms-transition: all 0.55s cubic-bezier(0.25, -1.33, 1, 1.33);
+	-o-transition: all 0.55s cubic-bezier(0.25, -1.33, 1, 1.33);
+	transition: all 0.55s cubic-bezier(0.25, -1.33, 1, 1.33);
+}
+section#map #map-container .pin {
+	background-image: url('images/pin.png');
+	width: 4.7%;
+	height: 21.3%;
+}
+section#map #map-container .live-pin {
+	background-image: url('images/live_pin.png');
+	width: 5.6%;
+	height: 25.3%;
+}
+section#map.inactive #map-container .pin,
+section#map.inactive #map-container .live-pin {
+	top: -100% !important;
+}
+section#map .map-overlay-outer {
+	display: none;
+}
+section#map .map-overlay span.close {
+	position: absolute;
+	top: 15px;
+	right: 12px;
+}
+section#map .map-overlay span.close:hover {
+	cursor: pointer;
+	cursor: hand;
+	text-decoration: underline;
+}
+/** MAP END **/
+
+/** PROJECTS START **/
+section#projects {
+	margin-bottom: 30px;
+}
+article.project {
+	margin-top: 30px;
+	background: #f6f6eb;
+}
+section.project-details {
+	position: relative;
+}
+div.article-left {
+	display: inline-block;
+	width: 50%;
+	padding: 25px 10px 20px;
+	box-sizing: border-box;
+}
+div.article-left .funded .funding-goal {
+	width: 100%;
+	height: 32px;
+	background: #d2d2d2;
+}
+div.article-left .funded .funding-goal .funding-total {
+	height: 100%;
+	background: #9a0064;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s;
+	-ms-transition: all 1s;
+	-o-transition: all 1s;
+	transition: all 1s;	
+}
+div.article-left .funded .funding-goal .funding-total.inactive {
+	width: 0 !important;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s;
+	-ms-transition: all 1s;
+	-o-transition: all 1s;
+	transition: all 1s;	
+}
+.thank-you {
+	margin-top: 20px;
+}
+.thank-you div.container {
+	display: inline-block;
+	width: 32.5%;
+}
+.thank-you div.container div {
+    display: inline-block;
+    margin-top: 10px;
+    vertical-align: top;
+}
+aside.article-image {
+	display: inline-block;
+	position: absolute;
+	right: 0;	
+	width: 50%;
+	height: 100%;
+	background-size: cover;
+	background-position: center center;
+}
+aside.article-image div.flash {
+	position: absolute;
+	right: 0;
+	width: 0px;
+	height: 0px;
+	border-bottom: 150px solid transparent;
+	border-right: 150px solid rgba(216,39,84,0.6);
+}
+aside.article-image div.flash.flash-funded {
+	border-right: 150px solid rgba(142,196,73,0.6);
+}
+aside.article-image div.flash p {
+    position: relative;
+    top: 12px;
+    right: -60px;
+    width: 93px;
+    height: 93px;
+    margin: 0px;
+}
+aside.article-image div.flash.flash-funded p {
+	top: 30px;
+}
+
+section.project-donate {
+	display: none;
+}
+section.project-donate header {
+	background: #dfdfd0;
+	padding: 15px 10px 10px;
+	border-bottom: 4px solid #9a0064;
+}
+section.project-donate header h3 {
+	float: left;
+}
+section.project-donate header p {
+	float: right;
+}
+section.project-donate header p:hover {
+	cursor: pointer;
+	cursor: hand;
+	text-decoration: underline;
+}
+section.project-donate article {
+	padding: 25px 10px;
+}
+section.project-donate label {
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	padding-left: 25px;
+	margin-right: 15px;
+}
+section.project-donate input[type=radio] {
+	display: none;
+}
+section.project-donate label:before {
+	content: "";
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	margin-right: 10px;
+	position: absolute;
+	left: 0;
+	bottom: 8px;
+	background-color: #d2d2d2;
+	overflow: hidden;
+}
+section.project-donate div.manual label:before {
+	bottom: 4px;
+}
+
+section.project-donate .radio div {
+	display: inline-block;
+	margin: 20px 2%;
+	width: 19%;
+	vertical-align: top;
+	text-align: center;
+}
+section.project-donate .radio div.manual {
+	margin-top: 22px;
+	width: 25%;
+	text-align: left;
+}
+section.project-donate .manual p span {
+	margin-right: 10px;
+}
+section.project-donate .manual p input {
+	box-sizing: border-box;	
+	width: 85%;
+	padding: 10px;
+	border: 1px solid #333;
+	border-radius: 2px;
+}
+section.project-donate .radio label:before {
+	border-radius: 8px;
+}
+
+section.project-donate label:hover:before {
+    content: "\2022";
+    color: #9a0064;
+    font-size: 24px;
+    text-align: center;
+    line-height: 18px;
+    text-indent: -1px;
+	-moz-transition: all 0.25s;
+	-webkit-transition: all 0.25s;
+	-ms-transition: all 0.25s;
+	-o-transition: all 0.25s;
+	transition: all 0.25s;
+}
+section.project-donate input[type=radio]:checked + label:before {
+    content: "\2022";
+    color: #9a0064;
+    font-size: 56px;
+    text-align: center;
+    line-height: 18px;
+    text-indent: -2px;
+	-moz-transition: all 0.33s;
+	-webkit-transition: all 0.33s;
+	-ms-transition: all 0.33s;
+	-o-transition: all 0.33s;
+	transition: all 0.33s;
+}
+section.project-donate .radio div p {
+	margin-top: 15px;
+}
+section.project-donate .project-donate-button-container {
+	text-align: center;
+}
+section.project-donate .project-donate-button-container .orange-button {
+	width: 280px;
+}
+/** PROJECTS END **/
+
+/*** STYLESHEET END ***/

@@ -75,6 +75,7 @@ body {
 .page-section {
 	margin: 0 auto;
 	max-width: 960px;
+	min-width: 960px;
 	overflow: hidden;
 	text-align: left;
 }
@@ -1087,9 +1088,339 @@ section.project-donate .project-donate-button-container .orange-button {
 }
 /** PROJECTS END **/
 
+/********* PROJECT PAGE START *********/
+
+/** HEADER START **/
+#project-page #header-outer-container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 10px;
+	height: 240px;
+	background: url('images/homepage_header_bg.jpg') no-repeat center center;
+	background-size: cover;
+}
+#project-page #header-outer-container header,
+#project-page #header-outer-container header h3 {
+	color: #fff;
+}
+#project-page #header-outer-container header h1 {
+	margin-top: 10px;
+	font-size: 42px;
+	text-transform: uppercase;
+	font-family: WWFRegular;
+}
+#project-page #header-outer-container header h3 {
+	font-size: 28px;
+}
+#project-page #header-outer-container header {
+	position: relative;
+	max-width: 940px;
+	height: 100%;
+}
+#project-page #header-outer-container div.left,
+#project-page #header-outer-container div.right {
+	position: absolute;
+	bottom: 15px;
+}
+#project-page #header-outer-container div.right {
+	right: 0;
+	background: url('images/project_page_header_icon.png') #f6f6eb no-repeat center center;
+	background-size: contain;
+	width: 32%;
+	height: 113px;
+	box-sizing: border-box;
+}
+/** HEADER END **/
+
+#project-page section.page-section {
+	margin-top: 12px;
+	padding: 0 10px;
+	box-sizing: border-box;
+}
+
+/** ARTICLE START **/
+#project-page section.page-section article#project-page-article {
+	float: left;
+	width: 68%;
+	padding-right: 10px;
+	box-sizing: border-box;
+}
+#project-page section.page-section article#project-page-article img.video-image {
+	width: 100%;
+	height: auto;
+}
+#project-page section.page-section article#project-page-article h2 {
+	margin: 20px 0;
+	font-size: 32px;
+	font-family: WWFRegular;	
+}
+#project-page section.page-section article#project-page-article p {
+	clear: both;
+	margin: 20px 0;
+}
+#project-page section.page-section article#project-page-article p strong {
+	font-weight: bold;
+}
+#project-page section.page-section article#project-page-article p img {
+	max-width: 100%;
+}
+#project-page section.page-section article#project-page-article p img.left {
+	margin: 0 15px 15px 0;
+}
+#project-page section.page-section article#project-page-article p img.right {
+	margin: 0 0 15px 15px;
+}
+#project-page section.page-section article#project-page-article section.project-donate {
+	display: block;
+	background: #f6f6eb;
+}
+
+/* GALLERY START */
+#project-page section.page-section article#project-page-article section.gallery {
+	margin: 20px 0;
+	overflow: hidden;
+}
+#project-page section.page-section article#project-page-article section.gallery .gallery-main-image {
+	width: 100%;
+}
+#project-page section.page-section article#project-page-article section.gallery .gallery-thumbnail-image {
+	float: left;
+	width: 13.22%;
+	height: auto;
+	margin-top: 0.5%;
+	margin-left: 1%;
+}
+#project-page section.page-section article#project-page-article section.gallery .gallery-thumbnail-image.first {
+	margin-left: 0;
+}
+#imageWrap { 
+    width: 640px; 
+    height: 420px; 
+    background: url('ajax-loader.gif') center center no-repeat; 
+}
+/* GALLERY END */
+
+/** ARTICLE END **/
+
+/** ASIDE START **/
+#project-page section.page-section aside {
+	float: left;
+	width: 32%;
+}
+
+#project-page section.page-section .funded {
+	margin-bottom: 15px;
+}
+#project-page section.page-section .funded .funding-goal {
+	width: 100%;
+	height: 32px;
+	background: #d2d2d2;
+}
+#project-page section.page-section .funded .funding-goal .funding-total {
+	height: 100%;
+	background: #9a0064;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s;
+	-ms-transition: all 1s;
+	-o-transition: all 1s;
+	transition: all 1s;	
+}
+#project-page section.page-section .funded .funding-goal .funding-total.inactive {
+	width: 0 !important;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s;
+	-ms-transition: all 1s;
+	-o-transition: all 1s;
+	transition: all 1s;	
+}
+
+#project-page section.page-section aside section.thank-you {
+	margin-top: 0;
+	padding: 0 10px 20px;
+}
+#project-page section.page-section aside section.thank-you div.container {
+	width: 49%;
+}
+
+#project-page section.page-section aside section#collective #collective-inner {
+	padding-top: 2.5%;
+}
+#project-page section.page-section aside section#collective #collective-inner .collective-images img {
+	margin: 0 0 2.5% 2.5%;
+	width: 23%;
+}
+#project-page section.page-section aside section#collective #collective-inner .collective-images img.first {
+	clear: both;
+	margin-left: 0;
+}
+#project-page section.page-section aside section#collective #collective-inner #expanded-image-container {
+	margin-bottom: 2.5%;
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#project-page section.page-section aside section#collective #collective-inner #expanded-image-container img {
+	float: none;
+	margin-top: 15%;
+	width: 50%;
+}
+#project-page section.page-section aside section#collective #collective-inner #expanded-image-container article {
+	float: none;
+	width: 100%;
+	text-align: left;
+}
+
+/* UPDATES AND NEWS START */
+#project-page section.page-section aside section#updates-and-news {
+	margin-top: 25px;
+	background: #f6f6eb;
+	padding: 25px 10px 5px;
+	box-sizing: border-box;
+}
+#project-page section.page-section aside section#updates-and-news h3 {
+	font-size: 26px;
+}
+#project-page section.page-section aside section#updates-and-news article h2 {
+	margin-top: 15px;
+	font-size: 22px;
+	font-family: WWFRegular;
+	color: #333;
+}
+#project-page section.page-section aside section#updates-and-news article img {
+	margin: 10px 0;
+	width: 100%;
+}
+#project-page section.page-section aside section#updates-and-news article p.link-paragraph {
+	margin: 15px 0;
+}
+#project-page section.page-section aside section#updates-and-news article p.link-paragraph a {
+	color: #9a0064;
+	text-decoration: none;
+	font-weight: bold;
+}
+#project-page section.page-section aside section#updates-and-news article p.link-paragraph a:hover {
+	text-decoration: underline;
+}
+/* UPDATES AND NEWS END */
+
+/* SHARE START */
+#project-page section.page-section aside section#share {
+	background: none;
+}
+#project-page section.page-section aside section#share h4 {
+	font-size: 22px;
+}
+/* SHARE END */
+/** ASIDE END **/
+
+/** DONATE START **/
+
+#project-page section.page-section article#project-page-article section.funded,
+#project-page section.page-section article#project-page-article section.thank-you {
+	vertical-align: top;
+	display: inline-block;
+	width: 42.5%;
+}
+#project-page section.page-section article#project-page-article section.funded {
+	width: 54%;
+}
+#project-page section.page-section article#project-page-article section.thank-you {
+	margin-left: 2.5%;
+}
+#project-page section.page-section article#project-page-article section.thank-you div.container {
+	width: 49%;
+}
+#project-page section.page-section article#project-page-article .funded p {
+	clear: none !important;
+	font-family: WWFRegular;
+	font-size: 32px;
+	text-transform: uppercase;
+	color: #333333;
+}
+#project-page section.page-section article#project-page-article .funded p span.smaller {
+	font-size: 26px;
+}
+
+#project-page section.project-donate {
+	display: block;
+}
+#project-page section.project-donate header#donate-header {
+	background: #9a0064;
+}
+#project-page section.project-donate header#donate-header h4 {
+	font-family: WWFRegular;
+	font-size: 36px;
+	color: #fff;
+}
+#project-page section.project-donate header#donate-header h4 span.smaller {
+	font-size: 26px;
+}
+
+#project-page section.project-donate .radio div {
+	width: 15% !important;
+}
+#project-page article#project-page-article section.project-donate .radio div.manual p {
+	margin-top: 0 !important;
+}
+#project-page article#project-page-article section.project-donate .radio div.manual {
+	margin-top: 15px;
+}
+
+#project-page section.project-donate label {
+	padding: 0;
+}
+#project-page section.project-donate label:before {
+	position: static;
+	margin-right: 0;
+	margin-bottom: 10px;
+}
+#project-page section.project-donate label span {
+	display: block;
+}
+#project-page section.project-donate div.manual {
+	width: auto !important;
+}
+#project-page section.project-donate div.manual label {
+	margin-bottom: 20px;
+	padding-left: 25px;
+}
+#project-page section.project-donate div.manual label:before {
+	margin-right: 10px;
+	position: absolute;
+	margin-bottom: 0;
+}
+#project-page section.project-donate div.manual label span {
+	display: inline;
+}
+
+#project-page section.page-section aside section.project-donate .radio div {
+	width: 28% !important;
+}
+#project-page section.page-section aside section#donate.project-donate .radio div.manual p {
+	width: 100%;
+}
+#project-page section.page-section aside section.project-donate article {
+	padding-top: 20px;
+}
+#project-page section.page-section aside section.project-donate .radio div.manual {
+	margin-top: 0;
+	width: auto !important;
+}
+
+#project-page section.page-section aside section.project-donate .project-donate-button-container .orange-button {
+	width: 100%;
+}
+/** DONATE END **/
+
+/********* PROJECT PAGE END *********/
+
 
 /* TABLET STYLING*/
 @media only screen and (min-width : 560px) and (max-width : 768px) {
+	.page-section {		
+		max-width: 100%;
+		min-width: 100%;
+	}
 	.hide_tablet {
 		display: none!important;
 	}
@@ -1145,7 +1476,8 @@ section.project-donate .project-donate-button-container .orange-button {
 		line-height: 26px;
 	}
 	section#share #share-inner img.share-icon {
-		width: 33px;
+		width: 30px;
+		height: 30px;
 	}
 	.map-overlay h3 {
 		margin: 5px 0!important;
@@ -1173,11 +1505,41 @@ section.project-donate .project-donate-button-container .orange-button {
 		width: 32%;
 	}
 
+
+	/*PROJECTS PAGE*/
+	#project-page section.project-donate header#donate-header h4,
+	#project-page section.project-donate header#donate-header h4 span.smaller {
+		font-size: 22px;
+	}
+	#project-page section.page-section aside section.project-donate .radio div {
+		width: 27% !important;
+	}
+	#project-page section.page-section aside section.thank-you div.container {
+		width: 48%;
+	}
+	/*dnate box*/
+	#project-page section.page-section article#project-page-article section.thank-you {
+		width: 41.5%;
+	}
+	#project-page section.page-section article#project-page-article section.thank-you div.container {
+		width: 48%;
+	}
+	#project-page section.project-donate .radio div {
+		width: 12% !important;
+	}
+	#project-page section.project-donate div.manual {
+		width: 42%!important;
+	}
+
 }
 
 
 /* MOBILE STYLING*/
 @media only screen and (max-width : 560px) {
+	.page-section {		
+		max-width: 100%;
+		min-width: 100%;
+	}
 /* Styles */
 	.show_desktop,
 	.desktop {
@@ -1199,11 +1561,6 @@ section.project-donate .project-donate-button-container .orange-button {
 	#homepage section#collectives #collectives-inner p {
 		font-size: 13px;
 	}
-	/*#homepage section#collectives #collectives-inner article .purple-button, 
-	#homepage section#collectives #collectives-inner article .blue-button, 
-	#homepage section#collectives #collectives-inner article .green-button {
-		padding: 10px 20px 10px 15px;
-	}*/
 	#homepage section#collectives #collectives-inner .orange-button {
 		width: 95%;
 		font-size: 22px;
@@ -1364,6 +1721,50 @@ section.project-donate .project-donate-button-container .orange-button {
 		height: 75%!important;
 	}
 
+	/*PROJECT PAGE*/
+	#project-page section.page-section article#project-page-article {
+		float: none;
+		width: 100%;
+		padding-right: 0;
+		clear: both;
+	}
+	#project-page #header-outer-container header h1 {
+		font-size: 31px;
+	}
+	#project-page #header-outer-container header h3 {
+		font-size: 24px;
+	}
+	#project-page #header-outer-container div.right {
+		width: 32%;
+		height: 58px;
+	}
+
+	/*ASIDE*/
+	#project-page section.page-section aside {
+		float: none;
+		width: 100%;
+		clear: both;
+	}
+	#project-page section#share #share-inner img.share-icon {
+		width: auto;
+	}
+	#project-page section.page-section article#project-page-article .funded p,
+	#project-page section.page-section article#project-page-article .funded p span.smaller {
+		font-size: 23px;
+	}
+	#project-page section.page-section article#project-page-article section.thank-you div.container {
+		width: 48%;
+	}
+	#project-page section.project-donate .radio div {
+		width: 13% !important;
+	}
+	#project-page section.project-donate div.manual {
+		width: auto !important;
+	}
+	section.project-donate label span {
+		font-size: 26px;
+	}
+
 }
 
 
@@ -1459,6 +1860,9 @@ section.project-donate .project-donate-button-container .orange-button {
 	
 
 	/*THE COLLECTIVE HUB*/
+	section#intro .article-text, section#intro #video-container {
+		width: 94%;
+	}
 	section#lead #lead-inner .orange-button,
 	section#lead #lead-inner .purple-button {
 		width: 100%!important;
@@ -1490,7 +1894,7 @@ section.project-donate .project-donate-button-container .orange-button {
 	}
 
 	h3, div.article-left .funded p, section.project-donate label span {
-		font-size: 22px;
+		font-size: 19px;
 		margin: 0 0 20px 0;
 	}
 	div.article-image {
@@ -1501,7 +1905,7 @@ section.project-donate .project-donate-button-container .orange-button {
 		height: 100%;
 		background-size: cover;
 		background-position: center center;
-		top: 42px;
+		top: 39px;
 	}
 	div.article-image div.flash {
 		position: absolute;
@@ -1572,6 +1976,39 @@ section.project-donate .project-donate-button-container .orange-button {
 	#collective-hub-page div.article-left .funded p span, section.project-donate label span {
 		font-size: 18px;
 	}
+
+	/*PROJECT PAGE*/
+	#project-page #header-outer-container div.left {
+		padding-bottom: 35px;
+	}
+	#project-page section#share #share-inner img.share-icon {
+		width: 26px;
+		height: 26px;
+		float: right;
+	}
+	section.project-donate header h3 {
+		width: 100%;
+	}
+	#project-page section.page-section article#project-page-article section.funded {
+		width: 100%;
+	}
+	#project-page section.page-section article#project-page-article section.thank-you {
+		width: 90%;
+	}
+	#project-page section.project-donate .radio div {
+		width: 28% !important;
+	}
+	#project-page section.project-donate div.manual {
+		width: auto !important;
+	}
+	section.project-donate label span {
+		font-size: 26px;
+	}
+	div.article-left .funded p span.smaller, section.project-donate .manual label span {
+		font-size: 20px;
+	}
+		
+
 }
 /*** STYLESHEET END ***/
 
